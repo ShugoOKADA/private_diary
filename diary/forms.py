@@ -1,6 +1,5 @@
-from os import name
 from django import forms
-from django.core.mail import EmailMessage, message
+from django.core.mail import EmailMessage
 
 
 class InquiryForm(forms.Form):
