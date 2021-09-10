@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
 
     'django.contrib.sites',
-    'allauth'
+    'allauth',
     'allauth.account',
  
 ]
@@ -136,8 +136,8 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 SITE_ID = 1
 
 AUTHENTICATION_BACKENDS = (
-    'allauth.account.auth_backends.AuthenticationBackend'
-    'django.contrib.auth.backends.ModelBackend'
+    'allauth.account.auth_backends.AuthenticationBackend',
+    'django.contrib.auth.backends.ModelBackend',
 )
 
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
